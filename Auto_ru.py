@@ -1,10 +1,8 @@
 import csv
 import _csv
 import datetime
-from io import TextIOWrapper
 import json
 import time
-from typing import Iterator
 from seleniumwire import webdriver
 from seleniumwire.utils import decode
 from selenium.webdriver.common.by import By
@@ -310,11 +308,6 @@ def get_page(URL: str) -> webdriver.Edge:
         By.XPATH,
         "/html/body/div[1]/div/div[2]/div[3]/div[2]/section/div[2]/div/div[2]/div[3]/div[3]/button",
     ).click()
-
-    # driver.find_element(
-    #     By.XPATH,
-    #     "/html/body/div[1]/div/div[2]/div[3]/div[2]/section/div[2]/div/div[10]/div/span/a[11]",
-    # ).click()
 
     return driver
 
